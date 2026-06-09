@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 560" width="520" height="560">
+  <g font-family="Helvetica, Arial, sans-serif">
+  <rect width="520" height="560" fill="#fbfbfb"/>
+  <text x="20" y="28" fill="#9a9a9a" font-size="12">Low-Fi Wireframe · Ustawienia (modal)</text>
+
+  <rect x="20" y="44" width="480" height="496" rx="14" fill="#efefef" stroke="#e2e2e2"/>
+  <rect x="100" y="90" width="320" height="380" rx="20" fill="#ffffff" stroke="#c8c8c8"/>
+
+  <text x="124" y="126" fill="#555555" font-weight="600" font-size="15">Ustawienia</text>
+  <text x="396" y="126" fill="#aaaaaa" font-size="11" text-anchor="end">✕</text>
+
+  <text x="124" y="158" fill="#8a8a8a" font-size="10" letter-spacing="1">WYGLĄD</text>
+  <text x="124" y="184" fill="#555555" font-size="13">Tryb ciemny</text>
+  <text x="124" y="200" fill="#aaaaaa" font-size="11">Wygodniejsza nauka wieczorem</text>
+  <rect x="356" y="176" width="40" height="22" rx="11" fill="#cfcfcf"/>
+  <circle cx="385" cy="187" r="8" fill="#ffffff" stroke="#cccccc"/>
+  <line x1="124" y1="216" x2="396" y2="216" stroke="#ededed"/>
+
+  <text x="124" y="246" fill="#8a8a8a" font-size="10" letter-spacing="1">LISTA „W TRAKCIE”</text>
+  <text x="124" y="272" fill="#555555" font-size="13">Limit ostrzeżenia</text>
+  <text x="124" y="288" fill="#aaaaaa" font-size="11">Ostrzeż, gdy zaczynam zbyt wiele naraz</text>
+  <rect x="348" y="262" width="48" height="26" rx="13" fill="#ffffff" stroke="#d5d5d5"/>
+  <text x="364" y="279" fill="#aaaaaa" font-size="11">3</text>
+  <path d="M380 272 l5 5 l5 -5" fill="none" stroke="#bbbbbb"/>
+  <line x1="124" y1="304" x2="396" y2="304" stroke="#ededed"/>
+
+  <text x="124" y="334" fill="#8a8a8a" font-size="10" letter-spacing="1">DANE</text>
+  <text x="124" y="360" fill="#555555" font-size="13">Wyczyść wszystkie dane</text>
+  <text x="124" y="376" fill="#aaaaaa" font-size="11">Usuwa wszystkie książki</text>
+  <rect x="330" y="348" width="66" height="26" rx="13" fill="#ffffff" stroke="#d9c0c0"/>
+  <text x="363" y="365" font-size="11" fill="#c98a8a" text-anchor="middle">Wyczyść</text>
+
+  <text x="260" y="440" fill="#aaaaaa" font-size="11" text-anchor="middle">ReadLab v1.0</text>
+
+  <text x="20" y="552" fill="#aaaaaa" font-size="11">Sekcje oddzielone hairline’ami. Tylko ustawienia wynikające z person (tryb ciemny, limit).</text>
+  </g>
+</svg>

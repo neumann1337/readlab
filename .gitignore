@@ -1,0 +1,16 @@
+# zależności i build aplikacji
+app/node_modules/
+app/dist/
+node_modules/
+dist/
+
+# logi
+*.log
+npm-debug.log*
+
+# system
+.DS_Store
+
+# edytory
+.vscode/
+.idea/

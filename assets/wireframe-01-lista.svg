@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+  <g font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="560" fill="#fbfbfb"/>
+  <text x="20" y="28" fill="#9a9a9a" font-size="12">ReadLab — Etap 2 · Low-Fi Wireframe · Lista książek (ekran główny)</text>
+
+  <!-- ============ DESKTOP ============ -->
+  <text x="20" y="52" fill="#aaaaaa" font-size="11">Desktop</text>
+  <rect x="20" y="60" width="690" height="480" rx="12" fill="#ffffff" stroke="#c8c8c8"/>
+
+  <text x="44" y="94" fill="#555555" font-weight="600" font-size="15">ReadLab</text>
+  <rect x="150" y="74" width="250" height="28" rx="14" fill="#f0f0f0" stroke="#d5d5d5"/>
+  <circle cx="166" cy="88" r="5" fill="none" stroke="#aaaaaa"/>
+  <line x1="170" y1="92" x2="173" y2="95" stroke="#aaaaaa"/>
+  <text x="180" y="92" fill="#aaaaaa" font-size="11">Szukaj</text>
+  <circle cx="612" cy="88" r="9" fill="none" stroke="#9a9a9a"/>
+  <circle cx="612" cy="88" r="3" fill="none" stroke="#9a9a9a"/>
+  <rect x="636" y="74" width="58" height="28" rx="14" fill="#555555"/>
+  <text x="665" y="92" fill="#ffffff" font-size="11" text-anchor="middle">+ Dodaj</text>
+  <line x1="20" y1="116" x2="710" y2="116" stroke="#e6e6e6"/>
+
+  <rect x="44" y="128" width="66" height="24" rx="12" fill="#f0f0f0" stroke="#d5d5d5"/>
+  <text x="77" y="144" fill="#aaaaaa" font-size="11" text-anchor="middle">Tag</text>
+  <rect x="120" y="128" width="92" height="24" rx="12" fill="#f0f0f0" stroke="#d5d5d5"/>
+  <text x="166" y="144" fill="#aaaaaa" font-size="11" text-anchor="middle">Priorytet</text>
+  <text x="556" y="144" fill="#aaaaaa" font-size="11" text-anchor="end">Sortuj</text>
+  <rect x="566" y="128" width="118" height="24" rx="12" fill="#f0f0f0" stroke="#d5d5d5"/>
+  <text x="625" y="144" fill="#aaaaaa" font-size="11" text-anchor="middle">Data dodania</text>
+
+  <text x="44" y="180" fill="#8a8a8a" font-size="10" letter-spacing="1">KOLEJKA</text>
+  <text x="232" y="180" fill="#aaaaaa" font-size="11" text-anchor="end">4</text>
+  <text x="274" y="180" fill="#8a8a8a" font-size="10" letter-spacing="1">W TRAKCIE</text>
+  <text x="462" y="180" fill="#aaaaaa" font-size="11" text-anchor="end">2</text>
+  <text x="504" y="180" fill="#8a8a8a" font-size="10" letter-spacing="1">SKOŃCZONE</text>
+  <text x="690" y="180" fill="#aaaaaa" font-size="11" text-anchor="end">2</text>
+
+  <!-- KOLEJKA cards -->
+  <g transform="translate(44,192)">
+    <g><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="120" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="78" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="28" height="8" rx="4" fill="#dbdbdb"/></g>
+    <g transform="translate(0,74)"><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="140" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="70" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="28" height="8" rx="4" fill="#dbdbdb"/></g>
+    <g transform="translate(0,148)"><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="110" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="84" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="28" height="8" rx="4" fill="#dbdbdb"/></g>
+    <g transform="translate(0,222)"><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="132" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="66" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="40" height="8" rx="4" fill="#dbdbdb"/></g>
+  </g>
+
+  <!-- W TRAKCIE cards -->
+  <g transform="translate(274,192)">
+    <g><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="124" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="74" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="28" height="8" rx="4" fill="#dbdbdb"/></g>
+    <g transform="translate(0,74)"><rect width="190" height="62" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="108" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="80" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#eeeeee" stroke="#dddddd"/><rect x="64" y="44" width="28" height="8" rx="4" fill="#dbdbdb"/></g>
+    <rect y="148" width="190" height="62" rx="10" fill="none" stroke="#dcdcdc" stroke-dasharray="5 4"/>
+    <text x="95" y="183" fill="#aaaaaa" font-size="11" text-anchor="middle">Przeciągnij tu książkę</text>
+  </g>
+
+  <!-- SKOŃCZONE cards (dimmed) -->
+  <g transform="translate(504,192)">
+    <g><rect width="190" height="62" rx="10" fill="#f7f7f7" stroke="#e2e2e2"/><rect x="14" y="13" width="120" height="8" rx="4" fill="#e6e6e6"/><rect x="14" y="28" width="72" height="6" rx="3" fill="#e6e6e6"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#f0f0f0" stroke="#e4e4e4"/></g>
+    <g transform="translate(0,74)"><rect width="190" height="62" rx="10" fill="#f7f7f7" stroke="#e2e2e2"/><rect x="14" y="13" width="100" height="8" rx="4" fill="#e6e6e6"/><rect x="14" y="28" width="84" height="6" rx="3" fill="#e6e6e6"/><rect x="14" y="42" width="42" height="12" rx="6" fill="#f0f0f0" stroke="#e4e4e4"/></g>
+  </g>
+
+  <text x="20" y="556" fill="#aaaaaa" font-size="11">Lista (desktop) — kanban: 3 kolumny, drag &amp; drop kart między statusami</text>
+
+  <!-- ============ MOBILE ============ -->
+  <text x="730" y="52" fill="#aaaaaa" font-size="11">Mobile</text>
+  <rect x="730" y="60" width="250" height="480" rx="22" fill="#ffffff" stroke="#c8c8c8"/>
+
+  <text x="750" y="96" fill="#555555" font-weight="600" font-size="15">ReadLab</text>
+  <circle cx="918" cy="90" r="8" fill="none" stroke="#9a9a9a"/>
+  <circle cx="918" cy="90" r="2.5" fill="none" stroke="#9a9a9a"/>
+  <rect x="936" y="80" width="26" height="22" rx="11" fill="#555555"/>
+  <text x="949" y="96" fill="#ffffff" font-size="13" text-anchor="middle">+</text>
+
+  <rect x="750" y="116" width="212" height="28" rx="14" fill="#f0f0f0" stroke="#d5d5d5"/>
+  <circle cx="766" cy="130" r="5" fill="none" stroke="#aaaaaa"/>
+  <text x="780" y="134" fill="#aaaaaa" font-size="11">Szukaj</text>
+
+  <rect x="750" y="156" width="212" height="30" rx="15" fill="#eeeeee" stroke="#dddddd"/>
+  <rect x="753" y="159" width="68" height="24" rx="12" fill="#ffffff" stroke="#dddddd"/>
+  <text x="787" y="175" fill="#aaaaaa" font-size="11" text-anchor="middle">Kolejka</text>
+  <text x="857" y="175" fill="#aaaaaa" font-size="11" text-anchor="middle">W tr.</text>
+  <text x="927" y="175" fill="#aaaaaa" font-size="11" text-anchor="middle">Skoń.</text>
+
+  <g transform="translate(750,200)">
+    <g><rect width="212" height="60" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="130" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="80" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="11" rx="6" fill="#eeeeee" stroke="#dddddd"/></g>
+    <g transform="translate(0,72)"><rect width="212" height="60" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="150" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="70" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="11" rx="6" fill="#eeeeee" stroke="#dddddd"/></g>
+    <g transform="translate(0,144)"><rect width="212" height="60" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="116" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="86" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="11" rx="6" fill="#eeeeee" stroke="#dddddd"/></g>
+    <g transform="translate(0,216)"><rect width="212" height="60" rx="10" fill="#ffffff" stroke="#dcdcdc"/><rect x="14" y="13" width="138" height="8" rx="4" fill="#c9c9c9"/><rect x="14" y="28" width="64" height="6" rx="3" fill="#dbdbdb"/><rect x="14" y="42" width="42" height="11" rx="6" fill="#eeeeee" stroke="#dddddd"/></g>
+  </g>
+  </g>
+</svg>

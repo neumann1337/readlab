@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <g font-family="Helvetica, Arial, sans-serif">
+  <rect width="1000" height="620" fill="#fbfbfb"/>
+  <text x="20" y="28" fill="#9a9a9a" font-size="12">ReadLab — Etap 2 · Mapa przepływu użytkownika (User Flow)</text>
+
+  <!-- inline actions note -->
+  <rect x="708" y="44" width="272" height="118" rx="10" fill="#fcfcfc" stroke="#d6d6d6" stroke-dasharray="5 4"/>
+  <text x="724" y="66" fill="#8a8a8a" font-size="10" letter-spacing="1">NA EKRANIE „LISTA” (bez zmiany widoku)</text>
+  <text x="724" y="90" fill="#888888" font-size="11">• przeciąganie karty między kolumnami</text>
+  <text x="736" y="106" fill="#888888" font-size="11">→ zmiana statusu książki</text>
+  <text x="724" y="128" fill="#888888" font-size="11">• wyszukiwarka / filtry / sortowanie</text>
+  <text x="736" y="144" fill="#888888" font-size="11">→ zawężenie / uporządkowanie listy</text>
+
+  <!-- edges (rysowane przed węzłami) -->
+  <path d="M470,126 C360,150 230,175 175,216" fill="none" stroke="#9a9a9a"/>
+  <polygon points="171,209 179,209 175,217" fill="#9a9a9a"/>
+  <text x="250" y="168" fill="#8a8a8a" font-size="10.5">„+ Dodaj”</text>
+
+  <path d="M510,126 L510,216" fill="none" stroke="#9a9a9a"/>
+  <polygon points="506,209 514,209 510,217" fill="#9a9a9a"/>
+  <text x="520" y="178" fill="#8a8a8a" font-size="10.5">klik w kartę</text>
+
+  <path d="M550,126 C660,150 790,175 850,216" fill="none" stroke="#9a9a9a"/>
+  <polygon points="846,209 854,209 850,217" fill="#9a9a9a"/>
+  <text x="700" y="168" fill="#8a8a8a" font-size="10.5">ikona ustawień</text>
+
+  <path d="M170,278 C200,400 320,470 416,508" fill="none" stroke="#9a9a9a"/>
+  <polygon points="409,504 409,512 417,508" fill="#9a9a9a"/>
+  <text x="225" y="430" fill="#8a8a8a" font-size="10.5">Zapisz / Anuluj</text>
+
+  <path d="M852,278 C820,400 700,475 604,510" fill="none" stroke="#9a9a9a"/>
+  <polygon points="611,506 611,514 603,510" fill="#9a9a9a"/>
+  <text x="770" y="440" fill="#8a8a8a" font-size="10.5">zamknij</text>
+
+  <path d="M500,278 L500,496" fill="none" stroke="#9a9a9a"/>
+  <polygon points="496,489 504,489 500,497" fill="#9a9a9a"/>
+  <text x="402" y="395" fill="#8a8a8a" font-size="10.5">Zapisz / Anuluj</text>
+
+  <path d="M595,262 C660,300 720,330 758,357" fill="none" stroke="#9a9a9a"/>
+  <polygon points="752,352 760,350 759,358" fill="#9a9a9a"/>
+  <text x="648" y="318" fill="#8a8a8a" font-size="10.5">„Usuń”</text>
+
+  <path d="M788,416 C780,460 680,500 604,522" fill="none" stroke="#9a9a9a"/>
+  <polygon points="611,518 611,526 603,522" fill="#9a9a9a"/>
+  <text x="690" y="476" fill="#8a8a8a" font-size="10.5">Usuń / Anuluj</text>
+
+  <path d="M420,528 C150,520 150,98 416,96" fill="none" stroke="#9a9a9a" stroke-dasharray="4 4"/>
+  <polygon points="409,92 409,100 417,96" fill="#9a9a9a"/>
+  <text x="120" y="312" fill="#8a8a8a" font-size="10.5" transform="rotate(-90 120,312)">powrót do listy</text>
+
+  <!-- nodes -->
+  <rect x="420" y="70" width="180" height="56" rx="12" fill="#e7e7e7" stroke="#a9a9a9"/>
+  <text x="510" y="98" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Lista książek</text>
+  <text x="510" y="114" fill="#8a8a8a" font-size="10.5" text-anchor="middle">START · ekran główny</text>
+
+  <rect x="80" y="220" width="170" height="56" rx="12" fill="#f3f3f3" stroke="#bdbdbd"/>
+  <text x="165" y="253" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Dodaj książkę</text>
+
+  <rect x="425" y="220" width="170" height="56" rx="12" fill="#f3f3f3" stroke="#bdbdbd"/>
+  <text x="510" y="253" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Edytuj książkę</text>
+
+  <rect x="770" y="220" width="170" height="56" rx="12" fill="#f3f3f3" stroke="#bdbdbd"/>
+  <text x="855" y="253" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Ustawienia</text>
+
+  <rect x="700" y="360" width="180" height="56" rx="12" fill="#f3f3f3" stroke="#bdbdbd"/>
+  <text x="790" y="388" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Potwierdź usunięcie</text>
+  <text x="790" y="404" fill="#8a8a8a" font-size="10.5" text-anchor="middle">Anuluj / Usuń</text>
+
+  <rect x="420" y="500" width="180" height="56" rx="12" fill="#e7e7e7" stroke="#a9a9a9"/>
+  <text x="510" y="528" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Lista — odświeżona</text>
+  <text x="510" y="544" fill="#8a8a8a" font-size="10.5" text-anchor="middle">ten sam ekran główny</text>
+  </g>
+</svg>
