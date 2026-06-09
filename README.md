@@ -15,7 +15,7 @@ które chcemy przeczytać, z podziałem na statusy **Kolejka → W trakcie → S
 ```bash
 cd app
 npm install
-npm run dev        # http://localhost:3000
+npm run dev
 ```
 
 > Wymagany Node.js w wersji 20.19+ lub 22.12+.
@@ -52,7 +52,7 @@ projektowanie-interfejsow/
 
 ## Linki do oddania
 
-- **Repozytorium z kodem:** _(uzupełnij — link do GitHub)_
+- **Repozytorium z kodem:** https://github.com/neumann1337/readlab
 - **Prototyp w Figmie:** _(uzupełnij — link do pliku Figma)_
 
 ## Postęp etapów
