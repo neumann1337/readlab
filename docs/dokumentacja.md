@@ -8,7 +8,7 @@ ReadLab to aplikacja do zarządzania **kolejką książek do przeczytania**, ze 
 
 ## Linki do oddania
 
-- **Repozytorium (kod źródłowy):** ...
+- **Repozytorium (kod źródłowy):** https://github.com/neumann1337/readlab
 - **Prototyp w Figmie:** ...
 - **Uruchomienie lokalne:** `cd app && npm install && npm run dev` → http://localhost:3000
 
