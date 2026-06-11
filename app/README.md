@@ -1,4 +1,4 @@
-# ReadLab — aplikacja (frontend)
+# ReadLab - aplikacja (frontend)
 
 Kolejka książek do przeczytania. React + Tailwind CSS + localStorage (bez backendu).
 To jest implementacja z **Etapu 5** projektu.
@@ -18,6 +18,7 @@ Build produkcyjny: `npm run build`, podgląd builda: `npm run preview`.
 ## Funkcje (mapowanie na wymagania projektu)
 
 **Wymagany CRUD:**
+
 - ➕ dodawanie książki (tytuł, autor, tag, priorytet, termin, status),
 - ✏️ edycja książki,
 - 🗑️ usuwanie (z potwierdzeniem),
@@ -25,6 +26,7 @@ Build produkcyjny: `npm run build`, podgląd builda: `npm run preview`.
 - 📋 lista / tablica książek.
 
 **Rozszerzony zakres (podbija ocenę):**
+
 - 🔎 wyszukiwarka (tytuł / autor / tag),
 - 🎚️ filtrowanie (tag, priorytet) + sortowanie (data, tytuł, priorytet, termin),
 - 🏷️ tagi, priorytety (kolorowe), terminy (z ostrzeżeniem o zbliżającym się / przeterminowanym),

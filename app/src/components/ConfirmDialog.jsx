@@ -17,7 +17,7 @@ export default function ConfirmDialog({
           <button
             type="button"
             onClick={onClose}
-            className="rounded-full border border-[var(--line)] px-4 py-2 text-[14px] font-medium text-[var(--fg)] hover:bg-[var(--hover)] transition"
+            className="rounded-full border border-[var(--line)] px-4 py-2 text-[14px] font-medium text-[var(--fg)] hover:bg-[var(--hover)] transition cursor-pointer"
           >
             Anuluj
           </button>
@@ -27,7 +27,7 @@ export default function ConfirmDialog({
               onConfirm()
               onClose()
             }}
-            className="ml-auto rounded-full px-5 py-2 text-[14px] font-medium text-white hover:opacity-90 transition"
+            className="ml-auto rounded-full px-5 py-2 text-[14px] font-medium text-white hover:opacity-90 transition cursor-pointer"
             style={{ backgroundColor: 'var(--danger)' }}
           >
             {confirmLabel}

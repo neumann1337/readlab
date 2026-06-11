@@ -34,7 +34,7 @@ export default function TopBar({ search, onSearch, onAdd, onOpenSettings }) {
             type="button"
             onClick={onOpenSettings}
             aria-label="Ustawienia"
-            className="grid h-9 w-9 place-items-center rounded-full text-[var(--fg2)] hover:bg-[var(--hover)] hover:text-[var(--fg)] transition"
+            className="grid h-9 w-9 place-items-center rounded-full text-[var(--fg2)] hover:bg-[var(--hover)] hover:text-[var(--fg)] transition cursor-pointer"
           >
             <svg className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
               <circle cx="12" cy="12" r="3" />
@@ -44,7 +44,7 @@ export default function TopBar({ search, onSearch, onAdd, onOpenSettings }) {
           <button
             type="button"
             onClick={onAdd}
-            className="inline-flex items-center gap-1 rounded-full bg-[var(--fg)] px-4 py-2 text-[14px] font-medium text-[var(--surface)] hover:opacity-85 transition"
+            className="inline-flex items-center gap-1 rounded-full bg-[var(--fg)] px-4 py-2 text-[14px] font-medium text-[var(--surface)] hover:opacity-85 transition cursor-pointer"
           >
             <span className="text-[16px] leading-none -mt-px">+</span>
             <span className="hidden sm:inline">Dodaj</span>

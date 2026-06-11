@@ -8,11 +8,11 @@ function Toggle({ checked, onChange, label }) {
       aria-checked={checked}
       aria-label={label}
       onClick={() => onChange(!checked)}
-      className="relative h-[30px] w-[50px] rounded-full transition-colors"
+      className="relative h-[30px] w-[50px] rounded-full transition-colors cursor-pointer"
       style={{ backgroundColor: checked ? 'var(--fg)' : 'var(--line)' }}
     >
       <span
-        className={`absolute top-[3px] h-6 w-6 rounded-full bg-white shadow transition-all ${
+        className={`absolute top-[3px] h-6 w-6 rounded-full bg-[var(--bg)] shadow transition-all ${
           checked ? 'left-[23px]' : 'left-[3px]'
         }`}
       />
@@ -95,7 +95,7 @@ export default function SettingsModal({
           <button
             type="button"
             onClick={onRequestClear}
-            className="rounded-full border px-3.5 py-1.5 text-[14px] font-medium hover:bg-[var(--hover)] transition"
+            className="rounded-full border px-3.5 py-1.5 text-[14px] font-medium hover:bg-[var(--hover)] transition cursor-pointer"
             style={{ color: 'var(--danger)', borderColor: 'var(--line)' }}
           >
             Wyczyść

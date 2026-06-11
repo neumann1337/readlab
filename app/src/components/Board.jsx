@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import Column from './Column'
-import Card from './Card'
-import { STATUSES } from '../lib/constants'
+import { useState } from "react";
+import Column from "./Column";
+import Card from "./Card";
+import { STATUSES } from "../lib/constants";
 
 export default function Board({
   materials,
@@ -9,19 +9,18 @@ export default function Board({
   onSetStatus,
   readingLimit,
 }) {
-  const [activeTab, setActiveTab] = useState('queue')
+  const [activeTab, setActiveTab] = useState("queue");
 
-  const byStatus = (statusId) =>
-    materials.filter((m) => m.status === statusId)
+  const byStatus = (statusId) => materials.filter((m) => m.status === statusId);
 
   const handleDragStart = (e, material) => {
-    e.dataTransfer.setData('text/plain', material.id)
-    e.dataTransfer.effectAllowed = 'move'
-  }
+    e.dataTransfer.setData("text/plain", material.id);
+    e.dataTransfer.effectAllowed = "move";
+  };
 
-  const handleDrop = (id, statusId) => onSetStatus(id, statusId)
+  const handleDrop = (id, statusId) => onSetStatus(id, statusId);
 
-  const readingCount = byStatus('reading').length
+  const readingCount = byStatus("reading").length;
 
   return (
     <>
@@ -34,7 +33,7 @@ export default function Board({
             onCardClick={onCardClick}
             onDragStart={handleDragStart}
             onDrop={handleDrop}
-            overLimit={status.id === 'reading' && readingCount > readingLimit}
+            overLimit={status.id === "reading" && readingCount > readingLimit}
           />
         ))}
       </div>
@@ -45,31 +44,31 @@ export default function Board({
           className="flex rounded-full bg-[var(--hover)] p-1 mb-6"
         >
           {STATUSES.map((status) => {
-            const count = byStatus(status.id).length
-            const active = activeTab === status.id
+            const count = byStatus(status.id).length;
+            const active = activeTab === status.id;
             return (
               <button
                 key={status.id}
                 role="tab"
                 aria-selected={active}
                 onClick={() => setActiveTab(status.id)}
-                className={`flex-1 rounded-full px-2 py-1.5 text-[13px] font-medium transition
+                className={`flex-1 rounded-full px-2 py-1.5 text-[13px] font-medium transition cursor-pointer
                   ${
                     active
-                      ? 'bg-[var(--surface)] text-[var(--fg)] shadow-sm'
-                      : 'text-[var(--fg2)]'
+                      ? "bg-[var(--surface)] text-[var(--fg)] shadow-sm"
+                      : "text-[var(--fg2)]"
                   }`}
               >
                 {status.label}
                 <span className="ml-1 tabular-nums opacity-60">{count}</span>
               </button>
-            )
+            );
           })}
         </div>
 
-        {activeTab === 'reading' && readingCount > readingLimit && (
+        {activeTab === "reading" && readingCount > readingLimit && (
           <p className="mb-3 text-[12px] text-[var(--fg2)]">
-            Sporo rzeczy naraz w trakcie — może najpierw dokończ jedną?
+            Sporo rzeczy naraz w trakcie - może najpierw dokończ jedną?
           </p>
         )}
 
@@ -85,12 +84,12 @@ export default function Board({
                 material={m}
                 onClick={onCardClick}
                 onDragStart={handleDragStart}
-                dimmed={activeTab === 'done'}
+                dimmed={activeTab === "done"}
               />
             ))
           )}
         </div>
       </div>
     </>
-  )
+  );
 }

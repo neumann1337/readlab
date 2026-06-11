@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import Card from './Card'
+import { useState } from "react";
+import Card from "./Card";
 
 export default function Column({
   status,
@@ -9,25 +9,25 @@ export default function Column({
   onDrop,
   overLimit,
 }) {
-  const [isOver, setIsOver] = useState(false)
+  const [isOver, setIsOver] = useState(false);
 
   const handleDrop = (e) => {
-    e.preventDefault()
-    setIsOver(false)
-    const id = e.dataTransfer.getData('text/plain')
-    if (id) onDrop(id, status.id)
-  }
+    e.preventDefault();
+    setIsOver(false);
+    const id = e.dataTransfer.getData("text/plain");
+    if (id) onDrop(id, status.id);
+  };
 
   return (
     <section
       onDragOver={(e) => {
-        e.preventDefault()
-        setIsOver(true)
+        e.preventDefault();
+        setIsOver(true);
       }}
       onDragLeave={() => setIsOver(false)}
       onDrop={handleDrop}
       className={`flex flex-col rounded-[20px] p-1 transition-colors
-        ${isOver ? 'bg-[var(--hover)]' : 'bg-transparent'}`}
+        ${isOver ? "bg-[var(--hover)]" : "bg-transparent"}`}
     >
       <div className="flex items-baseline justify-between px-2 pb-3 pt-1">
         <h2 className="text-[12px] font-semibold uppercase tracking-[0.06em] text-[var(--fg2)]">
@@ -40,7 +40,7 @@ export default function Column({
 
       {overLimit && (
         <p className="mb-2 px-2 text-[12px] leading-snug text-[var(--fg2)]">
-          Sporo rzeczy naraz w trakcie — może najpierw dokończ jedną?
+          Sporo rzeczy naraz w trakcie - może najpierw dokończ jedną?
         </p>
       )}
 
@@ -56,11 +56,11 @@ export default function Column({
               material={m}
               onClick={onCardClick}
               onDragStart={onDragStart}
-              dimmed={status.id === 'done'}
+              dimmed={status.id === "done"}
             />
           ))
         )}
       </div>
     </section>
-  )
+  );
 }

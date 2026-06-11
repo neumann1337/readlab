@@ -29,7 +29,7 @@ export default function Modal({ title, onClose, children, footer, size = 'md' })
             type="button"
             onClick={onClose}
             aria-label="Zamknij"
-            className="grid h-8 w-8 place-items-center rounded-full text-[var(--fg2)] hover:bg-[var(--hover)] hover:text-[var(--fg)] transition text-[15px]"
+            className="grid h-8 w-8 place-items-center rounded-full text-[var(--fg2)] hover:bg-[var(--hover)] hover:text-[var(--fg)] transition text-[15px] cursor-pointer"
           >
             ✕
           </button>

@@ -41,7 +41,7 @@ export default function FilterBar({ filters, onChange, sort, onSort, tags }) {
         <button
           type="button"
           onClick={() => onChange({ tag: '', priority: '' })}
-          className="px-2 text-[13px] text-[var(--fg2)] hover:text-[var(--fg)] transition"
+          className="px-2 text-[13px] text-[var(--fg2)] hover:text-[var(--fg)] transition cursor-pointer"
         >
           Wyczyść
         </button>
