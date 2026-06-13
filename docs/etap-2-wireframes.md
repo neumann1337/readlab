@@ -2,25 +2,31 @@
 
 Projekt: **ReadLab** — kolejka książek do przeczytania
 
-## Szkice Low-Fidelity (pliki)
+## Szkice Low-Fidelity (pliki SVG, w `assets/`)
 
-Wireframe'y wszystkich wymaganych widoków znajdują się w katalogu [`assets/`](../assets)
-jako pliki **SVG** (wektorowe, czysto Low-Fi: szare bloki, placeholdery tekstu, bez kolorów
-i finalnej typografii). Otwórz je w przeglądarce lub Figmie.
+Właściwe Low-Fi: **wyłącznie szare bloki, zero tekstu, bez kolorów** — chodzi o układ
+i hierarchię, nie o treść.
 
 | Widok | Plik |
 |-------|------|
-| Lista książek (desktop + mobile) | [`wireframe-01-lista.svg`](../assets/wireframe-01-lista.svg) |
-| Dodawanie książki | [`wireframe-02-dodawanie.svg`](../assets/wireframe-02-dodawanie.svg) |
-| Edycja książki | [`wireframe-03-edycja.svg`](../assets/wireframe-03-edycja.svg) |
-| Ustawienia | [`wireframe-04-ustawienia.svg`](../assets/wireframe-04-ustawienia.svg) |
+| Lista książek (desktop + mobile) | [`lowfi-01-lista.svg`](../assets/lowfi-01-lista.svg) |
+| Dodawanie książki | [`lowfi-02-dodawanie.svg`](../assets/lowfi-02-dodawanie.svg) |
+| Edycja książki | [`lowfi-03-edycja.svg`](../assets/lowfi-03-edycja.svg) |
+| Ustawienia | [`lowfi-04-ustawienia.svg`](../assets/lowfi-04-ustawienia.svg) |
 | Mapa User Flow | [`user-flow.svg`](../assets/user-flow.svg) |
 
-![Lista książek](../assets/wireframe-01-lista.svg)
-![Dodawanie książki](../assets/wireframe-02-dodawanie.svg)
-![Edycja książki](../assets/wireframe-03-edycja.svg)
-![Ustawienia](../assets/wireframe-04-ustawienia.svg)
+![Lista książek](../assets/lowfi-01-lista.svg)
+![Dodawanie książki](../assets/lowfi-02-dodawanie.svg)
+![Edycja książki](../assets/lowfi-03-edycja.svg)
+![Ustawienia](../assets/lowfi-04-ustawienia.svg)
 ![Mapa User Flow](../assets/user-flow.svg)
+
+### Wersja szczegółowa (pomost do Hi-Fi / Etapu 3)
+Bardziej dopracowane szkice z etykietami i opisami — wygodne jako baza do prototypu w Figmie:
+[`wireframe-01-lista.svg`](../assets/wireframe-01-lista.svg) ·
+[`wireframe-02-dodawanie.svg`](../assets/wireframe-02-dodawanie.svg) ·
+[`wireframe-03-edycja.svg`](../assets/wireframe-03-edycja.svg) ·
+[`wireframe-04-ustawienia.svg`](../assets/wireframe-04-ustawienia.svg)
 
 ### Import do Figmy
 

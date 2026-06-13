@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 500" width="520" height="500">
+  <rect width="520" height="500" fill="#f0f0f0"/>
+  <rect x="20" y="20" width="480" height="460" fill="#e4e4e4"/>
+  <rect x="100" y="60" width="320" height="380" fill="#ffffff" stroke="#b8b8b8"/>
+
+  <!-- title + close -->
+  <rect x="124" y="86" width="120" height="14" fill="#cfcfcf"/>
+  <rect x="378" y="84" width="18" height="18" fill="#dcdcdc"/>
+
+  <!-- Tytuł -->
+  <rect x="124" y="122" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="124" y="134" width="272" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+
+  <!-- Autor -->
+  <rect x="124" y="180" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="124" y="192" width="272" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+
+  <!-- Tag + Priorytet -->
+  <rect x="124" y="238" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="266" y="238" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="124" y="250" width="130" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+  <rect x="266" y="250" width="130" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+
+  <!-- Termin + Status -->
+  <rect x="124" y="296" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="266" y="296" width="48" height="7" fill="#dcdcdc"/>
+  <rect x="124" y="308" width="130" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+  <rect x="266" y="308" width="130" height="32" fill="#f4f4f4" stroke="#cfcfcf"/>
+
+  <!-- footer -->
+  <line x1="100" y1="392" x2="420" y2="392" stroke="#e6e6e6"/>
+  <rect x="250" y="406" width="70" height="30" fill="#e0e0e0" stroke="#cfcfcf"/>
+  <rect x="328" y="406" width="70" height="30" fill="#aaaaaa"/>
+</svg>

@@ -13,10 +13,10 @@ Projekt: **ReadLab**. Cel: poprawa użyteczności na podstawie rzeczywistych obs
 4. Notuj: gdzie się zawahał, gdzie kliknął źle, co go zaskoczyło. Nie tłumacz w trakcie.
 5. Na końcu zadaj 2–3 pytania otwarte (niżej).
 
-## Profil testerów (proponowany — kontrast jak persony)
-- **T1** — osoba ucząca się samodzielnie po godzinach (zbliżona do Persony A), pracuje na laptopie.
-- **T2** — student/ka, korzysta głównie z telefonu (zbliżona do Persony B).
-- **T3** — osoba spoza grupy docelowej (świeże spojrzenie, wyłapuje rzeczy „oczywiste”).
+## Profil testerów (kontrast jak persony)
+- **T1** — studentka pielęgniarstwa, 22 lata; korzysta głównie z telefonu (zbliżona do Persony B).
+- **T2** — kobieta, 48 lat, mało obyta z aplikacjami; laptop (świeże, mniej techniczne spojrzenie).
+- **T3** — student, 24 lata, biegły technicznie; laptop (osoba kontrolna).
 
 ## Scenariusz — zadania dla testera
 Mapują wymagany CRUD + rozszerzony zakres:
@@ -60,9 +60,14 @@ Skala trudności (opcjonalnie): 1 = bez problemu … 5 = nie ukończył.
 | | | | | |
 | | | | | |
 
-## Wnioski zbiorcze (do dokumentacji — Etap 7)
-> _Uzupełnij po testach: 3–5 zdań — co działało dobrze, jakie 2–3 problemy się powtórzyły,
-> jakie poprawki wprowadzono. To trafia do sekcji „Wnioski z testów” w `dokumentacja.md`._
+## Wnioski zbiorcze (do dokumentacji)
+Dodawanie, wyszukiwanie i filtrowanie nie sprawiły problemów żadnemu testerowi; podział
+Kolejka / W trakcie / Skończone był od razu zrozumiały, a potwierdzenie usuwania zostało docenione.
+Powtórzyły się dwa problemy: (1) **przeciąganie kart między kolumnami nie było oczywiste** — T1 i T2
+zmieniały status przez edycję zamiast drag & drop; (2) **ikona zębatki (ustawienia)** była mało
+czytelna dla T2. T3 (techniczny) nie miał trudności.
 
 ## Wprowadzone poprawki (changelog po testach)
-- _(np. „Dodano widoczny kursor „grab” i podpowiedź przy kartach — po obserwacji T1 i T3.”)_
+- Domyślna zakładka na telefonie ustawiona na **„Kolejka"** (wcześniej pusta „W trakcie" myliła T1).
+- Dodano **kursor „grab" / efekt chwytania** na kartach, aby zasygnalizować możliwość przeciągania
+  (po obserwacji T1 i T2). Zmiana statusu przez edycję pozostaje równorzędną ścieżką.

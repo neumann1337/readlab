@@ -22,7 +22,7 @@ export default function Card({ material, onClick, onDragStart, dimmed }) {
       onClick={() => onClick(material)}
       className={`group w-full text-left rounded-[18px] border p-4 transition duration-200
         border-[var(--line)] bg-[var(--surface)]
-        hover:shadow-[0_6px_24px_rgba(0,0,0,0.07)] hover:-translate-y-px cursor-pointer
+        hover:shadow-[0_6px_24px_rgba(0,0,0,0.07)] hover:-translate-y-px cursor-grab active:cursor-grabbing
         ${dimmed ? 'opacity-55' : ''}`}
     >
       <p className="text-[15px] font-medium leading-snug tracking-[-0.01em] text-[var(--fg)] break-words">
