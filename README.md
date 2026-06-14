@@ -58,7 +58,7 @@ Przepływ obejmuje pełny wymagany CRUD (dodawanie, edycja, usuwanie, zmiana sta
 
 ## 4. Najważniejsze wnioski z testów użyteczności
 
-Testy przeprowadzono z **3 osobami** metodą „think aloud" (scenariusz: `docs/etap-4-testy.md`).
+Testy przeprowadzono z **3 osobami** metodą „think aloud".
 Testerzy: **T1** — studentka pielęgniarstwa, 22 lata (telefon); **T2** — kobieta, 48 lat, mało
 obyta z aplikacjami (laptop); **T3** — student, 24 lata, biegły technicznie (laptop).
 
@@ -117,8 +117,3 @@ npm run dev        # http://localhost:3000
 ```
 
 > Wymagany Node.js w wersji 20.19+ lub 22.12+.
-
-_Dokumenty szczegółowe w `docs/`: analiza (`etap-1-analiza.md`), szkice + User Flow
-(`etap-2-wireframes.md`), przewodnik Figma (`etap-3-figma-przewodnik.md`), testy
-(`etap-4-testy.md`), QA (`etap-6-qa.md`), prezentacja (`prezentacja.md`), specyfikacja wizualna
-(`szkice-cechy.md`)._
