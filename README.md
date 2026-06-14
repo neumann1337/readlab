@@ -10,7 +10,7 @@ przeczytania** ze statusami **Kolejka → W trakcie → Skończone**.
 ## Linki do oddania
 
 - **Repozytorium z kodem:** https://github.com/neumann1337/readlab
-- **Prototyp w Figmie:** https://www.figma.com/proto/9Tbi3S1SnsvuC3lp2xbUmU/ReadLab?node-id=0-1&t=0ZM4tTjmjokpavum-1
+- **Prototyp w Figmie:** https://www.figma.com/proto/pDOwEMIdNrbdxHww5TIHmS/readlab?node-id=0-1&t=LtUzbUFuszB5Jhfy-1
 - **Uruchomienie lokalne:** `cd app && npm install && npm run dev` → http://localhost:3000
 
 ---
@@ -68,6 +68,7 @@ Podział na Kolejkę / W trakcie / Skończone był zrozumiały od pierwszego spo
 pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
 
 **Powtarzające się problemy.**
+
 - **Przeciąganie kart nie było oczywiste** (T1 i T2): zamiast przeciągnąć kartę między kolumnami,
   obie otwierały ją i zmieniały pole „Status" w edycji. Ścieżka zadziałała, ale drag & drop
   pozostał nieodkryty. T3 użył przeciągania od razu.
@@ -75,6 +76,7 @@ pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
   z ustawieniami / trybem ciemnym.
 
 **Wprowadzone poprawki (wynikające z obserwacji).**
+
 - Domyślna zakładka na telefonie ustawiona na **„Kolejka"** (wcześniej „W trakcie", która bywała
   pusta i myliła T1).
 - Dodano **kursor „grab" i efekt chwytania** na kartach, by zasygnalizować możliwość przeciągania;
@@ -82,6 +84,7 @@ pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
 
 ## 5. Uzasadnienie najważniejszych decyzji projektowych
 
+<<<<<<< Updated upstream
 - **Statusy Kolejka → W trakcie → Skończone** zamiast prostego „wykonane" - odwzorowują realny cykl
   życia książki i są rdzeniem wartości („coś więcej niż to-do"). Wynikają z frustracji Persony A.
 - **Kanban (desktop) / zakładki (mobile)** - ta sama logika, dwa układy = responsywność bez utraty
@@ -91,6 +94,12 @@ pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
 - **Tylko tytuł wymagany** w formularzu - szybkie dodawanie (Persona B); reszta opcjonalna.
 - **Potwierdzenie usuwania** - ochrona przed przypadkową utratą danych (_dostępność_).
 - **localStorage zamiast backendu** - zgodne z wymaganiami; cały wysiłek idzie w UX/UI.
+=======
+- **Trzy statusy** — realny cykl życia książki: początek, czytanie, biblioteka zakończonych tytułów.
+- **Responsywność dla urządzeń mobilnych** — łatwy dostęp z każdego urządzenia.
+- **Dodawanie samego tytułu** — dodanie książki zajmuje sekundę; reszta pól opcjonalna.
+- **Potwierdzenie przed usunięciem** — ochrona przed przypadkową utratą danych, zwłaszcza na urządzeniach dotykowych.
+>>>>>>> Stashed changes
 
 ---
 
