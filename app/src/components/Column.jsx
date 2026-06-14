@@ -1,41 +1,32 @@
-import { useState } from "react";
-import Card from "./Card";
+import { useState } from 'react'
+import Card from './Card'
 
-export default function Column({
-  status,
-  materials,
-  onCardClick,
-  onDragStart,
-  onDrop,
-  overLimit,
-}) {
-  const [isOver, setIsOver] = useState(false);
+export default function Column({ status, materials, onCardClick, onDragStart, onDrop, overLimit }) {
+  const [isOver, setIsOver] = useState(false)
 
   const handleDrop = (e) => {
-    e.preventDefault();
-    setIsOver(false);
-    const id = e.dataTransfer.getData("text/plain");
-    if (id) onDrop(id, status.id);
-  };
+    e.preventDefault()
+    setIsOver(false)
+    const id = e.dataTransfer.getData('text/plain')
+    if (id) onDrop(id, status.id)
+  }
 
   return (
     <section
       onDragOver={(e) => {
-        e.preventDefault();
-        setIsOver(true);
+        e.preventDefault()
+        setIsOver(true)
       }}
       onDragLeave={() => setIsOver(false)}
       onDrop={handleDrop}
       className={`flex flex-col rounded-[20px] p-1 transition-colors
-        ${isOver ? "bg-[var(--hover)]" : "bg-transparent"}`}
+        ${isOver ? 'bg-[var(--hover)]' : 'bg-transparent'}`}
     >
       <div className="flex items-baseline justify-between px-2 pb-3 pt-1">
         <h2 className="text-[12px] font-semibold uppercase tracking-[0.06em] text-[var(--fg2)]">
           {status.label}
         </h2>
-        <span className="text-[12px] tabular-nums text-[var(--fg2)]">
-          {materials.length}
-        </span>
+        <span className="text-[12px] tabular-nums text-[var(--fg2)]">{materials.length}</span>
       </div>
 
       {overLimit && (
@@ -56,11 +47,11 @@ export default function Column({
               material={m}
               onClick={onCardClick}
               onDragStart={onDragStart}
-              dimmed={status.id === "done"}
+              dimmed={status.id === 'done'}
             />
           ))
         )}
       </div>
     </section>
-  );
+  )
 }

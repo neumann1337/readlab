@@ -22,9 +22,7 @@ export default function Modal({ title, onClose, children, footer, size = 'md' })
         className={`w-full ${maxW} rounded-t-[24px] sm:rounded-[24px] bg-[var(--surface)] border border-[var(--line)] shadow-[0_24px_64px_rgba(0,0,0,0.24)] max-h-[92vh] overflow-y-auto`}
       >
         <div className="flex items-center justify-between px-6 pt-5 pb-4">
-          <h2 className="text-[18px] font-semibold tracking-[-0.01em] text-[var(--fg)]">
-            {title}
-          </h2>
+          <h2 className="text-[18px] font-semibold tracking-[-0.01em] text-[var(--fg)]">{title}</h2>
           <button
             type="button"
             onClick={onClose}
@@ -37,9 +35,7 @@ export default function Modal({ title, onClose, children, footer, size = 'md' })
 
         <div className="px-6 pb-2">{children}</div>
 
-        {footer && (
-          <div className="flex items-center gap-2 px-6 py-5 mt-2">{footer}</div>
-        )}
+        {footer && <div className="flex items-center gap-2 px-6 py-5 mt-2">{footer}</div>}
       </div>
     </div>
   )

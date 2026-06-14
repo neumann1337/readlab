@@ -38,18 +38,12 @@ export default function SettingsModal({
         </h3>
         <div className={rowClass}>
           <div>
-            <p className="text-[14px] font-medium text-[var(--fg)]">
-              Tryb ciemny
-            </p>
+            <p className="text-[14px] font-medium text-[var(--fg)]">Tryb ciemny</p>
             <p className="text-[12px] text-[var(--fg2)]">
               Wygodniejsza nauka wieczorem, optymalizacja pod ekran OLED
             </p>
           </div>
-          <Toggle
-            checked={settings.dark}
-            onChange={onSetDark}
-            label="Tryb ciemny"
-          />
+          <Toggle checked={settings.dark} onChange={onSetDark} label="Tryb ciemny" />
         </div>
       </section>
 
@@ -59,12 +53,8 @@ export default function SettingsModal({
         </h3>
         <div className={rowClass}>
           <div>
-            <p className="text-[14px] font-medium text-[var(--fg)]">
-              Limit ostrzeżenia
-            </p>
-            <p className="text-[12px] text-[var(--fg2)]">
-              Ostrzeż, gdy zaczynam zbyt wiele naraz
-            </p>
+            <p className="text-[14px] font-medium text-[var(--fg)]">Limit ostrzeżenia</p>
+            <p className="text-[12px] text-[var(--fg2)]">Ostrzeż, gdy zaczynam zbyt wiele naraz</p>
           </div>
           <select
             value={settings.readingLimit}
@@ -87,9 +77,7 @@ export default function SettingsModal({
         </h3>
         <div className={rowClass}>
           <div>
-            <p className="text-[14px] font-medium text-[var(--fg)]">
-              Wyczyść wszystkie dane
-            </p>
+            <p className="text-[14px] font-medium text-[var(--fg)]">Wyczyść wszystkie dane</p>
             <p className="text-[12px] text-[var(--fg2)]">Usuwa wszystkie książki</p>
           </div>
           <button
@@ -103,9 +91,7 @@ export default function SettingsModal({
         </div>
       </section>
 
-      <p className="mt-5 text-center text-[12px] text-[var(--fg2)]">
-        ReadLab v1.0
-      </p>
+      <p className="mt-5 text-center text-[12px] text-[var(--fg2)]">ReadLab v1.0</p>
     </Modal>
   )
 }

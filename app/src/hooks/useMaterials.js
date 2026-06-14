@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import { KEYS, loadJSON, saveJSON } from '../lib/storage'
 import { seedMaterials } from '../data/seed'
 
-const uid = () =>
-  `m-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
+const uid = () => `m-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
 
 const SEED_VERSION = 3
 
@@ -35,9 +34,7 @@ export function useMaterials() {
   }
 
   const updateMaterial = (id, data) => {
-    setMaterials((prev) =>
-      prev.map((m) => (m.id === id ? { ...m, ...data } : m))
-    )
+    setMaterials((prev) => prev.map((m) => (m.id === id ? { ...m, ...data } : m)))
   }
 
   const deleteMaterial = (id) => {
@@ -45,9 +42,7 @@ export function useMaterials() {
   }
 
   const setStatus = (id, status) => {
-    setMaterials((prev) =>
-      prev.map((m) => (m.id === id ? { ...m, status } : m))
-    )
+    setMaterials((prev) => prev.map((m) => (m.id === id ? { ...m, status } : m)))
   }
 
   const clearAll = () => setMaterials([])

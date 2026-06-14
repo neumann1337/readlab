@@ -19,5 +19,4 @@ export const SORT_OPTIONS = [
 
 export const PRIORITY_RANK = { high: 3, medium: 2, low: 1, '': 0 }
 
-export const labelOf = (list, id) =>
-  list.find((x) => x.id === id)?.label ?? ''
+export const labelOf = (list, id) => list.find((x) => x.id === id)?.label ?? ''

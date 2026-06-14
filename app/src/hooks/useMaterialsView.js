@@ -31,9 +31,7 @@ export function useMaterialsView(materials) {
         case 'title':
           return a.title.localeCompare(b.title, 'pl')
         case 'priority':
-          return (
-            (PRIORITY_RANK[b.priority] || 0) - (PRIORITY_RANK[a.priority] || 0)
-          )
+          return (PRIORITY_RANK[b.priority] || 0) - (PRIORITY_RANK[a.priority] || 0)
         case 'due':
           if (!a.due) return 1
           if (!b.due) return -1

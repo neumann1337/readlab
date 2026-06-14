@@ -4,9 +4,7 @@ import { KEYS, loadJSON, saveJSON } from '../lib/storage'
 const DEFAULTS = { dark: false, readingLimit: 3 }
 
 export function useSettings() {
-  const [settings, setSettings] = useState(() =>
-    loadJSON(KEYS.settings, DEFAULTS)
-  )
+  const [settings, setSettings] = useState(() => loadJSON(KEYS.settings, DEFAULTS))
 
   useEffect(() => {
     saveJSON(KEYS.settings, settings)
@@ -14,8 +12,7 @@ export function useSettings() {
   }, [settings])
 
   const setDark = (dark) => setSettings((s) => ({ ...s, dark }))
-  const setReadingLimit = (readingLimit) =>
-    setSettings((s) => ({ ...s, readingLimit }))
+  const setReadingLimit = (readingLimit) => setSettings((s) => ({ ...s, readingLimit }))
 
   return { settings, setDark, setReadingLimit }
 }

@@ -1,56 +1,49 @@
-import { useState } from "react";
-import Modal from "./Modal";
-import { PRIORITIES, STATUSES } from "../lib/constants";
+import { useState } from 'react'
+import Modal from './Modal'
+import { PRIORITIES, STATUSES } from '../lib/constants'
 
 const empty = {
-  title: "",
-  author: "",
-  tag: "",
-  priority: "",
-  due: "",
-  status: "queue",
-};
+  title: '',
+  author: '',
+  tag: '',
+  priority: '',
+  due: '',
+  status: 'queue',
+}
 
 const fieldClass =
-  "w-full rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2.5 text-[14px] text-[var(--fg)] placeholder:text-[var(--fg2)] focus:outline-none focus:border-[var(--fg2)] transition";
-const labelClass = "block text-[12px] font-medium text-[var(--fg2)] mb-1.5";
+  'w-full rounded-xl border border-[var(--line)] bg-[var(--surface)] px-3.5 py-2.5 text-[14px] text-[var(--fg)] placeholder:text-[var(--fg2)] focus:outline-none focus:border-[var(--fg2)] transition'
+const labelClass = 'block text-[12px] font-medium text-[var(--fg2)] mb-1.5'
 
-export default function MaterialModal({
-  material,
-  onSave,
-  onRequestDelete,
-  onClose,
-}) {
-  const isEdit = Boolean(material);
-  const [form, setForm] = useState(
-    material ? { ...empty, ...material } : empty,
-  );
-  const [errors, setErrors] = useState({});
-  const [touched, setTouched] = useState(false);
+export default function MaterialModal({ material, onSave, onRequestDelete, onClose }) {
+  const isEdit = Boolean(material)
+  const [form, setForm] = useState(material ? { ...empty, ...material } : empty)
+  const [errors, setErrors] = useState({})
+  const [touched, setTouched] = useState(false)
 
-  const set = (key, value) => setForm((f) => ({ ...f, [key]: value }));
+  const set = (key, value) => setForm((f) => ({ ...f, [key]: value }))
 
   const validate = (data) => {
-    const e = {};
-    if (!data.title.trim()) e.title = "Podaj tytuł";
-    return e;
-  };
+    const e = {}
+    if (!data.title.trim()) e.title = 'Podaj tytuł'
+    return e
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setTouched(true);
-    const errs = validate(form);
-    setErrors(errs);
-    if (Object.keys(errs).length > 0) return;
-    onSave({ ...form, title: form.title.trim(), author: form.author.trim() });
-    onClose();
-  };
+    e.preventDefault()
+    setTouched(true)
+    const errs = validate(form)
+    setErrors(errs)
+    if (Object.keys(errs).length > 0) return
+    onSave({ ...form, title: form.title.trim(), author: form.author.trim() })
+    onClose()
+  }
 
-  const errBorder = { borderColor: "var(--danger)" };
+  const errBorder = { borderColor: 'var(--danger)' }
 
   return (
     <Modal
-      title={isEdit ? "Edytuj książkę" : "Dodaj książkę"}
+      title={isEdit ? 'Edytuj książkę' : 'Dodaj książkę'}
       onClose={onClose}
       footer={
         <>
@@ -59,7 +52,7 @@ export default function MaterialModal({
               type="button"
               onClick={() => onRequestDelete(material)}
               className="rounded-full px-3 py-2 text-[14px] font-medium hover:bg-[var(--hover)] transition cursor-pointer"
-              style={{ color: "var(--danger)" }}
+              style={{ color: 'var(--danger)' }}
             >
               Usuń
             </button>
@@ -81,12 +74,7 @@ export default function MaterialModal({
         </>
       }
     >
-      <form
-        id="material-form"
-        onSubmit={handleSubmit}
-        className="space-y-4"
-        noValidate
-      >
+      <form id="material-form" onSubmit={handleSubmit} className="space-y-4" noValidate>
         <div>
           <label htmlFor="title" className={labelClass}>
             Tytuł
@@ -96,15 +84,12 @@ export default function MaterialModal({
             className={fieldClass}
             style={touched && errors.title ? errBorder : undefined}
             value={form.title}
-            onChange={(e) => set("title", e.target.value)}
+            onChange={(e) => set('title', e.target.value)}
             placeholder="np. Basic Economics"
             autoFocus
           />
           {touched && errors.title && (
-            <p
-              className="mt-1.5 text-[12px]"
-              style={{ color: "var(--danger)" }}
-            >
+            <p className="mt-1.5 text-[12px]" style={{ color: 'var(--danger)' }}>
               {errors.title}
             </p>
           )}
@@ -118,7 +103,7 @@ export default function MaterialModal({
             id="author"
             className={fieldClass}
             value={form.author}
-            onChange={(e) => set("author", e.target.value)}
+            onChange={(e) => set('author', e.target.value)}
             placeholder="np. Thomas Sowell"
           />
         </div>
@@ -132,7 +117,7 @@ export default function MaterialModal({
               id="tag"
               className={fieldClass}
               value={form.tag}
-              onChange={(e) => set("tag", e.target.value)}
+              onChange={(e) => set('tag', e.target.value)}
               placeholder="np. ekonomia"
             />
           </div>
@@ -144,7 +129,7 @@ export default function MaterialModal({
               id="priority"
               className={`${fieldClass} appearance-none cursor-pointer`}
               value={form.priority}
-              onChange={(e) => set("priority", e.target.value)}
+              onChange={(e) => set('priority', e.target.value)}
             >
               <option value="">- brak -</option>
               {PRIORITIES.map((p) => (
@@ -166,7 +151,7 @@ export default function MaterialModal({
               type="date"
               className={fieldClass}
               value={form.due}
-              onChange={(e) => set("due", e.target.value)}
+              onChange={(e) => set('due', e.target.value)}
             />
           </div>
           <div>
@@ -177,7 +162,7 @@ export default function MaterialModal({
               id="status"
               className={`${fieldClass} appearance-none cursor-pointer`}
               value={form.status}
-              onChange={(e) => set("status", e.target.value)}
+              onChange={(e) => set('status', e.target.value)}
             >
               {STATUSES.map((s) => (
                 <option key={s.id} value={s.id}>
@@ -189,5 +174,5 @@ export default function MaterialModal({
         </div>
       </form>
     </Modal>
-  );
+  )
 }

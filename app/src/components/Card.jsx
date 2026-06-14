@@ -29,9 +29,7 @@ export default function Card({ material, onClick, onDragStart, dimmed }) {
         {material.title}
       </p>
       {material.author && (
-        <p className="mt-0.5 text-[13px] text-[var(--fg2)] truncate">
-          {material.author}
-        </p>
+        <p className="mt-0.5 text-[13px] text-[var(--fg2)] truncate">{material.author}</p>
       )}
 
       {hasMeta && (
@@ -42,9 +40,7 @@ export default function Card({ material, onClick, onDragStart, dimmed }) {
             </span>
           )}
 
-          {material.priority && (
-            <span>{labelOf(PRIORITIES, material.priority)}</span>
-          )}
+          {material.priority && <span>{labelOf(PRIORITIES, material.priority)}</span>}
 
           {due && (
             <span style={due.overdue ? { color: 'var(--danger)' } : undefined}>
