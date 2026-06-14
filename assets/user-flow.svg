@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
   <g font-family="Helvetica, Arial, sans-serif">
   <rect width="1000" height="620" fill="#fbfbfb"/>
-  <text x="20" y="28" fill="#9a9a9a" font-size="12">ReadLab — Etap 2 · Mapa przepływu użytkownika (User Flow)</text>
+  <text x="20" y="28" fill="#9a9a9a" font-size="12">ReadLab - Etap 2 · Mapa przepływu użytkownika (User Flow)</text>
 
   <!-- inline actions note -->
   <rect x="708" y="44" width="272" height="118" rx="10" fill="#fcfcfc" stroke="#d6d6d6" stroke-dasharray="5 4"/>
@@ -67,7 +67,7 @@
   <text x="790" y="404" fill="#8a8a8a" font-size="10.5" text-anchor="middle">Anuluj / Usuń</text>
 
   <rect x="420" y="500" width="180" height="56" rx="12" fill="#e7e7e7" stroke="#a9a9a9"/>
-  <text x="510" y="528" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Lista — odświeżona</text>
+  <text x="510" y="528" fill="#555555" font-size="13" font-weight="600" text-anchor="middle">Lista - odświeżona</text>
   <text x="510" y="544" fill="#8a8a8a" font-size="10.5" text-anchor="middle">ten sam ekran główny</text>
   </g>
 </svg>
