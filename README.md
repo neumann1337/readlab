@@ -84,7 +84,6 @@ pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
 
 ## 5. Uzasadnienie najważniejszych decyzji projektowych
 
-<<<<<<< Updated upstream
 - **Statusy Kolejka → W trakcie → Skończone** zamiast prostego „wykonane" - odwzorowują realny cykl
   życia książki i są rdzeniem wartości („coś więcej niż to-do"). Wynikają z frustracji Persony A.
 - **Kanban (desktop) / zakładki (mobile)** - ta sama logika, dwa układy = responsywność bez utraty
@@ -94,12 +93,6 @@ pytanie o potwierdzenie przy usuwaniu („dobrze, że pyta").
 - **Tylko tytuł wymagany** w formularzu - szybkie dodawanie (Persona B); reszta opcjonalna.
 - **Potwierdzenie usuwania** - ochrona przed przypadkową utratą danych (_dostępność_).
 - **localStorage zamiast backendu** - zgodne z wymaganiami; cały wysiłek idzie w UX/UI.
-=======
-- **Trzy statusy** — realny cykl życia książki: początek, czytanie, biblioteka zakończonych tytułów.
-- **Responsywność dla urządzeń mobilnych** — łatwy dostęp z każdego urządzenia.
-- **Dodawanie samego tytułu** — dodanie książki zajmuje sekundę; reszta pól opcjonalna.
-- **Potwierdzenie przed usunięciem** — ochrona przed przypadkową utratą danych, zwłaszcza na urządzeniach dotykowych.
->>>>>>> Stashed changes
 
 ---
 
